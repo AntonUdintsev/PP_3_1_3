@@ -19,7 +19,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     private final UserDao userDao;
     private final PasswordEncoder passwordEncoder;
 
-    @Autowired
     @Lazy
     public UserServiceImpl(UserDao userDao, PasswordEncoder passwordEncoder) {
         this.userDao = userDao;

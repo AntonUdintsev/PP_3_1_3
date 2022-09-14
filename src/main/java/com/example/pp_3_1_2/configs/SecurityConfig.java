@@ -20,7 +20,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final SuccessUserHandler successUserHandler;
     private final PasswordEncoder passwordEncoder;
 
-    @Autowired
     public SecurityConfig(UserDetailsService userDetailsService, SuccessUserHandler successUserHandler, @Lazy PasswordEncoder passwordEncoder) {
         this.userDetailsService = userDetailsService;
         this.successUserHandler = successUserHandler;
